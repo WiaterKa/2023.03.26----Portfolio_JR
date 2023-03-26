@@ -1,0 +1,67 @@
+//do dodania elementy dekoracyjne (spirale etc.)
+
+.hero {
+  width: 100%;
+  height: 82.5rem;
+  position: relative;
+
+  .hero-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.9rem;
+
+    .logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      letter-spacing: -0.0444444rem;
+    }
+
+    .social-container {
+      display: flex;
+      justify-content: space-around;
+      width: 19.5rem;
+    }
+  }
+
+  .hero-dev-img {
+    max-width: 44.5rem;
+    max-height: 72rem;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    z-index: -20;
+
+  }
+
+  .ring {
+    width: 530px;
+    height: 130px;
+    position: absolute;
+    z-index: -19;
+    top: 8rem;
+    left: -35rem;
+  }
+
+  .h1-hero {
+    @include headerMain();
+    width: 75rem;
+
+    .name {
+      border-bottom: solid 5px $color-fourth;
+    }
+  }
+
+  .p-primary {
+    @include primaryPar();
+    padding-top: 4rem;
+    padding-bottom: 6.6rem;
+    width: 44.5rem;
+  }
+
+  .p-secondary {
+    @include secondaryPar();
+  }
+}

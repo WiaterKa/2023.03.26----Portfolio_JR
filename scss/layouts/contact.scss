@@ -1,0 +1,93 @@
+.contact-wrapper {
+  margin-inline: 16.5rem;
+  max-width: 111rem;
+  background-color: $color-third;
+}
+
+.contact {
+  width: 100%;
+  max-height: 67.5rem;
+  background-color: $color-third;
+
+  .contact-container {
+    display: flex;
+    padding-top: 8.4rem;
+    justify-content: space-between;
+
+    .txt-box {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      width: 50%;
+      height: 100%;
+
+      .h2-primary {
+        @include headerSecondary();
+      }
+
+      .p-primary {
+        padding-top: 3.6rem;
+        @include primaryPar();
+      }
+    }
+  }
+
+  form {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.0222222rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    width: 44.5rem;
+    height: 32.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 50%;
+
+    input,
+    textarea {
+      background-color: $color-third;
+      border: none;
+      border-bottom: 1px solid $color-primary;
+      width: 80%;
+    }
+
+    textarea {
+      height: 9rem;
+    }
+
+    .p-secondary {
+      @include secondaryPar();
+      outline: none;
+      width: 14rem;
+      margin-right: 1rem; //UWAGA
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $color-primary;
+    padding-top: 4.7rem;
+    padding-bottom: 9.2rem;
+
+    .logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      letter-spacing: -0.0444444rem;
+    }
+
+    .social-container {
+      display: flex;
+      justify-content: space-around;
+      width: 19.5rem;
+    }
+  }
+}

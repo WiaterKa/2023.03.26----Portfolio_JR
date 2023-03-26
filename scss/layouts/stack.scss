@@ -1,0 +1,29 @@
+.stack {
+  width: 100%;
+  height: auto;
+  padding-bottom: 14rem;
+
+  .table-container {
+    border-top: solid 2px $color-secondary;
+    width: 100%;
+
+    .table_bg {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+      letter-spacing: -0.15px;
+    }
+
+    .table_sm {
+      @include primaryPar();
+    }
+
+    td {
+      width: 34.5rem;
+      height: 20.5rem;
+      margin-bottom: 5.5rem;
+      text-align: center;
+    }
+  }
+}

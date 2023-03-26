@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: $fontMain;
+}
+
+body {
+  background-color: $color-fifth;
+  color: $color-primary;
+}
+
+.content-container {
+  margin-inline: 16.5rem;
+  max-width: 111rem;
+}
