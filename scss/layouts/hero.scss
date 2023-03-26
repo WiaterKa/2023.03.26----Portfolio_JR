@@ -86,6 +86,7 @@
       font-size: 4rem;
       line-height: 4rem;
       padding-top: 4rem;
+      width: 100%;
     }
 
     .name {
@@ -98,6 +99,10 @@
     padding-top: 4rem;
     padding-bottom: 6.6rem;
     width: 44.5rem;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
   }
 
   .p-secondary {
