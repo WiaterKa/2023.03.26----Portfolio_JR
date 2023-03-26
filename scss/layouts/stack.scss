@@ -25,17 +25,17 @@
       grid-template-rows: repeat(6, 1fr);
     }
 
-    .ring {
-      width: 530px;
-      height: 130px;
-      position: absolute;
-      z-index: 2;
-      top: 39rem;
-      right: -24rem;
-      @media screen and (max-width: 900px) {
-        top: 80rem;
-      }
-    }
+    // .ring {
+    //   width: 530px;
+    //   height: 130px;
+    //   position: absolute;
+    //   z-index: 2;
+    //   top: 39rem;
+    //   right: -24rem;
+    //   @media screen and (max-width: 900px) {
+    //     top: 80rem;
+    //   }
+    // }
 
     .table-box {
       margin-bottom: 5.5rem;
