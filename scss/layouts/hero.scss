@@ -33,7 +33,6 @@
     right: 0;
     top: -1rem;
     z-index: -20;
-
   }
 
   .ring {
@@ -63,5 +62,8 @@
 
   .p-secondary {
     @include secondaryPar();
+    &:hover {
+      color: $color-fourth;
+    }
   }
 }
