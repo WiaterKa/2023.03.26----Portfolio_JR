@@ -5,11 +5,26 @@
   height: 82.5rem;
   position: relative;
 
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
   .hero-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 3.9rem;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      position: relative;
+    }
 
     .logo {
       font-style: normal;
@@ -33,6 +48,22 @@
     right: 0;
     top: -1rem;
     z-index: -20;
+
+    @media screen and (max-width: 1100px) {
+      max-height: 60rem;
+      max-width: 32.2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      max-width: 17rem;
+      max-height: 38rem;
+      // right: 19rem;
+      // top: 13rem;
+      box-shadow: 5px -94px 100px 14px rgba(25, 25, 29, 0.85);
+      border-radius: 1rem;
+      position: static;
+      padding-top: 4rem;
+    }
   }
 
   .ring {
@@ -47,6 +78,15 @@
   .h1-hero {
     @include headerMain();
     width: 75rem;
+
+    @media screen and (max-width: 1330px) {
+      width: 50rem;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 4rem;
+      line-height: 4rem;
+      padding-top: 4rem;
+    }
 
     .name {
       border-bottom: solid 5px $color-fourth;
@@ -65,5 +105,10 @@
     &:hover {
       color: $color-fourth;
     }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 8rem;
+    }
   }
 }
+
+// RWD TABLETS

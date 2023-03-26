@@ -12,6 +12,12 @@
 
     .h2-primary {
       @include headerSecondary();
+
+      @media screen and (max-width: 900px) { 
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+
     }
 
     .p-secondary {
@@ -39,6 +45,15 @@
       max-width: 50rem;
       max-height: 48.7rem;
       position: relative;
+
+      @media screen and (max-width: 1330px) {
+        max-width: 34.2rem;
+        max-height: 39.8rem;
+      }
+
+      @media screen and (max-width: 1100px) {
+        max-height: 45rem;
+      }
 
       img {
         width: 100%;
@@ -83,11 +98,30 @@
         align-items: center;
         text-align: center;
 
+        @media screen and (max-width: 1330px) {
+          height: 64%;
+          top: -7.3rem;
+        }
+
+        @media screen and (max-width: 1100px) {
+          background-color: transparent;
+          top: 7rem;
+          left: 0rem;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-end;
+          gap: 3rem;
+        }
+
         .p-secondary {
           @include secondaryPar();
           padding-top: 2rem;
           &:hover {
             color: $color-fourth;
+          }
+
+          @media screen and (max-width: 1100px) {
+            width: 14rem;
           }
         }
       }

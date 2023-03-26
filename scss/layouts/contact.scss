@@ -1,26 +1,61 @@
 .contact-wrapper {
   margin-inline: 16.5rem;
   max-width: 111rem;
-  background-color: $color-third;
+  background-color: $color-third !important;
+  height: auto;
+
+  @media screen and (max-width: 1100px) {
+    margin-inline: 3rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-inline: 1.6rem;
+  }
 }
 
 .contact {
   width: 100%;
-  max-height: 67.5rem;
   background-color: $color-third;
+  position: relative;
+
+  .ring {
+    width: 530px;
+    height: 130px;
+    position: absolute;
+    z-index: 2;
+    top: 26rem;
+    left: -24rem;
+    @media screen and (max-width: 900px) {
+      top: 3rem;
+    }
+  }
 
   .contact-container {
     display: flex;
     padding-top: 8.4rem;
     justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: 1330px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .txt-box {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-
       width: 50%;
       height: 100%;
+
+      @media screen and (max-width: 1330px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
 
       .h2-primary {
         @include headerSecondary();
@@ -29,6 +64,10 @@
       .p-primary {
         padding-top: 3.6rem;
         @include primaryPar();
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -40,14 +79,21 @@
     letter-spacing: -0.0222222rem;
     text-transform: uppercase;
     color: $color-primary;
-    width: 44.5rem;
     height: 32.7rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     outline: none;
-
     width: 50%;
+
+    @media screen and (max-width: 1330px) {
+      align-items: center;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      height: auto;
+    }
 
     input,
     textarea {
@@ -56,6 +102,10 @@
       border-bottom: 1px solid $color-primary;
       width: 80%;
       color: $color-primary;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
     }
 
     textarea {
@@ -69,6 +119,11 @@
       &:hover {
         color: $color-fourth;
       }
+
+      @media screen and (max-width: 900px) {
+        align-self: flex-end;
+        margin-bottom: 8rem;
+      }
     }
   }
 
@@ -79,6 +134,12 @@
     border-top: 1px solid $color-primary;
     padding-top: 4.7rem;
     padding-bottom: 9.2rem;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
 
     .logo {
       font-style: normal;
