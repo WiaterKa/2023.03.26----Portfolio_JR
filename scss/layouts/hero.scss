@@ -38,6 +38,14 @@
       display: flex;
       justify-content: space-around;
       width: 19.5rem;
+
+      svg {
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          color: $color-fourth;
+        }
+      }
     }
   }
 

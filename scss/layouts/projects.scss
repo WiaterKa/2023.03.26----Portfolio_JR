@@ -13,11 +13,10 @@
     .h2-primary {
       @include headerSecondary();
 
-      @media screen and (max-width: 900px) { 
+      @media screen and (max-width: 900px) {
         font-size: 4rem;
         line-height: 4rem;
       }
-
     }
 
     .p-secondary {
@@ -81,7 +80,7 @@
       }
 
       .d-none {
-        display: none !important;
+        display: none;
       }
 
       .project-links {
@@ -116,6 +115,7 @@
         .p-secondary {
           @include secondaryPar();
           padding-top: 2rem;
+          cursor: pointer;
           &:hover {
             color: $color-fourth;
           }

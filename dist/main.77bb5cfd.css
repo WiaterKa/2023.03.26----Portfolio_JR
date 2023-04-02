@@ -329,6 +329,11 @@ body {
   margin-inline: 16.5rem;
   max-width: 111rem;
 }
+@media screen and (min-width: 1400px) {
+  .content-container {
+    margin-inline: auto;
+  }
+}
 @media screen and (max-width: 1100px) {
   .content-container {
     margin-inline: 3rem;
@@ -379,6 +384,12 @@ body {
   display: flex;
   justify-content: space-around;
   width: 19.5rem;
+}
+.hero .hero-nav .social-container svg {
+  color: rgb(255, 255, 255);
+}
+.hero .hero-nav .social-container svg:hover {
+  color: #4ee1a0;
 }
 .hero .hero-dev-img {
   max-width: 44.5rem;
@@ -432,6 +443,7 @@ body {
     font-size: 4rem;
     line-height: 4rem;
     padding-top: 4rem;
+    width: 100%;
   }
 }
 .hero .h1-hero .name {
@@ -447,6 +459,11 @@ body {
   padding-top: 4rem;
   padding-bottom: 6.6rem;
   width: 44.5rem;
+}
+@media screen and (max-width: 900px) {
+  .hero .p-primary {
+    width: 100%;
+  }
 }
 .hero .p-secondary {
   font-family: "Space Grotesk";
@@ -704,7 +721,7 @@ body {
   padding-bottom: 6.9rem;
 }
 .projects .projects-container .project-box .d-none {
-  display: none !important;
+  display: none;
 }
 .projects .projects-container .project-box .project-links {
   position: absolute;
@@ -751,6 +768,7 @@ body {
   text-decoration: none;
   color: white;
   padding-top: 2rem;
+  cursor: pointer;
 }
 .projects .projects-container .project-box .project-links .p-secondary:hover {
   color: #4ee1a0;
@@ -764,9 +782,14 @@ body {
 .contact-wrapper {
   margin-inline: 16.5rem;
   max-width: 111rem;
-  background-color: #242424 !important;
+  background-color: #242424;
   height: auto;
   overflow: hidden;
+}
+@media screen and (min-width: 1400px) {
+  .contact-wrapper {
+    margin-inline: auto;
+  }
 }
 @media screen and (max-width: 1100px) {
   .contact-wrapper {
@@ -800,6 +823,7 @@ body {
 .contact .contact-container {
   display: flex;
   padding-top: 8.4rem;
+  padding-bottom: 3rem;
   justify-content: space-between;
   width: 100%;
 }
@@ -863,6 +887,7 @@ body {
   align-items: flex-end;
   outline: none;
   width: 50%;
+  position: relative;
 }
 @media screen and (max-width: 1330px) {
   .contact form {
@@ -882,6 +907,8 @@ body {
   border-bottom: 1px solid white;
   width: 80%;
   color: white;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 @media screen and (max-width: 900px) {
   .contact form input,
@@ -891,6 +918,44 @@ body {
 }
 .contact form textarea {
   height: 9rem;
+}
+.contact form .alert-box {
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.0166667rem;
+  color: #ff6f5b;
+  right: 0;
+  bottom: 15rem;
+  text-transform: none;
+  display: none;
+}
+@media screen and (min-width: 900px) and (max-width: 1330px) {
+  .contact form .alert-box {
+    right: 5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact form .alert-box {
+    bottom: 23rem;
+  }
+}
+.contact form svg {
+  position: absolute;
+  right: 0;
+  bottom: 18rem;
+  display: none;
+}
+@media screen and (min-width: 900px) and (max-width: 1330px) {
+  .contact form svg {
+    right: 5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact form svg {
+    bottom: 27rem;
+  }
 }
 .contact form .p-secondary {
   font-family: "Space Grotesk";
@@ -907,6 +972,7 @@ body {
   color: white;
   outline: none;
   width: 14rem;
+  cursor: pointer;
 }
 .contact form .p-secondary:hover {
   color: #4ee1a0;
@@ -943,6 +1009,12 @@ body {
   display: flex;
   justify-content: space-around;
   width: 19.5rem;
+}
+.contact .footer .social-container svg {
+  color: rgb(255, 255, 255);
+}
+.contact .footer .social-container svg:hover {
+  color: #4ee1a0;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
